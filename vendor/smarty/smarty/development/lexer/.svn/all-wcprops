@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4860/trunk/development/lexer
+END
+smarty_internal_configfileparser.y
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4512/trunk/development/lexer/smarty_internal_configfileparser.y
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4756/trunk/development/lexer/Exception.php
+END
+smarty_internal_configfilelexer.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4860/trunk/development/lexer/smarty_internal_configfilelexer.php
+END
+ParserGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4756/trunk/development/lexer/ParserGenerator.php
+END
+Create_Config_Parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4756/trunk/development/lexer/Create_Config_Parser.php
+END
+smarty_internal_templateparser.y
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/4845/trunk/development/lexer/smarty_internal_templateparser.y
+END
+Lempar Original.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4756/trunk/development/lexer/Lempar%20Original.php
+END
+smarty_internal_templatelexer.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4860/trunk/development/lexer/smarty_internal_templatelexer.php
+END
+Create_Template_Parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4756/trunk/development/lexer/Create_Template_Parser.php
+END
+smarty_internal_configfileparser.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4851/trunk/development/lexer/smarty_internal_configfileparser.php
+END
+Lempar.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4801/trunk/development/lexer/Lempar.php
+END
+smarty_internal_configfilelexer.plex
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4860/trunk/development/lexer/smarty_internal_configfilelexer.plex
+END
+smarty_internal_templateparser.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4859/trunk/development/lexer/smarty_internal_templateparser.php
+END
+LexerGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4756/trunk/development/lexer/LexerGenerator.php
+END
+smarty_internal_templatelexer.plex
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/4860/trunk/development/lexer/smarty_internal_templatelexer.plex
+END

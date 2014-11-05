@@ -1,0 +1,773 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files
+END
+demo.plugins.resource.extendsall.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.resource.extendsall.html
+END
+libs.sysplugins.smarty_internal_config_file_compiler.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_config_file_compiler.html
+END
+libs.plugins.modifiercompiler.escape.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.escape.html
+END
+libs.sysplugins.smarty_internal_resource_php.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_php.html
+END
+libs.plugins.modifiercompiler.count_paragraphs.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.count_paragraphs.html
+END
+libs.plugins.function.html_image.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_image.html
+END
+libs.plugins.modifier.spacify.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.spacify.html
+END
+libs.sysplugins.smarty_internal_utility.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_utility.html
+END
+libs.plugins.modifiercompiler.count_words.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.count_words.html
+END
+libs.plugins.function.html_table.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_table.html
+END
+libs.Smarty.class.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.Smarty.class.html
+END
+libs.sysplugins.smarty_internal_cacheresource_file.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_cacheresource_file.html
+END
+libs.sysplugins.smarty_security.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_security.html
+END
+libs.sysplugins.smarty_internal_compile_capture.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_capture.html
+END
+libs.plugins.function.html_select_time.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_select_time.html
+END
+libs.plugins.modifiercompiler.string_format.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.string_format.html
+END
+libs.plugins.modifier.debug_print_var.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.debug_print_var.html
+END
+libs.sysplugins.smarty_internal_resource_string.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_string.html
+END
+libs.plugins.function.math.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.math.html
+END
+libs.sysplugins.smarty_internal_debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_debug.html
+END
+libs.plugins.modifier.capitalize.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.capitalize.html
+END
+libs.plugins.modifiercompiler.count_sentences.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.count_sentences.html
+END
+libs.sysplugins.smarty_internal_compile_function.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_function.html
+END
+libs.sysplugins.smarty_internal_resource_eval.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_eval.html
+END
+libs.plugins.modifier.escape.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.escape.html
+END
+libs.sysplugins.smarty_internal_compile_private_registered_function.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_registered_function.html
+END
+libs.sysplugins.smarty_internal_compile_private_function_plugin.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_function_plugin.html
+END
+libs.sysplugins.smarty_internal_compile_if.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_if.html
+END
+libs.sysplugins.smarty_internal_smartytemplatecompiler.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_smartytemplatecompiler.html
+END
+libs.sysplugins.smarty_internal_compile_private_block_plugin.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_block_plugin.html
+END
+libs.sysplugins.smarty_internal_resource_extends.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_extends.html
+END
+libs.sysplugins.smarty_internal_compile_extends.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_extends.html
+END
+libs.sysplugins.smarty_internal_compile_rdelim.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_rdelim.html
+END
+libs.plugins.modifier.date_format.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.date_format.html
+END
+libs.plugins.function.html_select_date.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_select_date.html
+END
+libs.sysplugins.smarty_internal_parsetree.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_parsetree.html
+END
+demo.plugins.resource.mysql.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.resource.mysql.html
+END
+libs.plugins.block.textformat.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.block.textformat.html
+END
+libs.sysplugins.smarty_internal_compile_break.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_break.html
+END
+demo.plugins.cacheresource.pdo.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.cacheresource.pdo.html
+END
+libs.sysplugins.smarty_internal_compile_for.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_for.html
+END
+libs.sysplugins.smarty_internal_compile_private_modifier.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_modifier.html
+END
+libs.plugins.modifiercompiler.wordwrap.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.wordwrap.html
+END
+libs.sysplugins.smarty_cacheresource_custom.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_cacheresource_custom.html
+END
+libs.sysplugins.smarty_internal_compile_setfilter.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_setfilter.html
+END
+libs.sysplugins.smarty_resource_uncompiled.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_resource_uncompiled.html
+END
+libs.sysplugins.smarty_internal_templatelexer.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_templatelexer.html
+END
+libs.sysplugins.smarty_internal_template.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_template.html
+END
+libs.sysplugins.smarty_internal_compile_insert.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_insert.html
+END
+libs.sysplugins.smarty_internal_compile_section.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_section.html
+END
+demo.plugins.cacheresource.memcache.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.cacheresource.memcache.html
+END
+libs.plugins.modifiercompiler.default.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.default.html
+END
+libs.sysplugins.smarty_resource_custom.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_resource_custom.html
+END
+demo.plugins.cacheresource.pdo_gzip.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.cacheresource.pdo_gzip.html
+END
+libs.sysplugins.smarty_internal_compile_private_object_block_function.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_object_block_function.html
+END
+libs.sysplugins.smarty_internal_write_file.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_write_file.html
+END
+libs.plugins.function.cycle.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.cycle.html
+END
+libs.sysplugins.smarty_internal_compile_include.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_include.html
+END
+libs.sysplugins.smarty_resource.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_resource.html
+END
+libs.plugins.shared.escape_special_chars.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.escape_special_chars.html
+END
+libs.sysplugins.smarty_internal_compile_assign.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_assign.html
+END
+libs.sysplugins.smarty_internal_compile_debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_debug.html
+END
+libs.sysplugins.smarty_resource_recompiled.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_resource_recompiled.html
+END
+libs.sysplugins.smarty_internal_templatecompilerbase.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_templatecompilerbase.html
+END
+libs.sysplugins.smarty_cacheresource_keyvaluestore.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_cacheresource_keyvaluestore.html
+END
+libs.sysplugins.smarty_internal_resource_registered.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_registered.html
+END
+libs.sysplugins.smarty_internal_data.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_data.html
+END
+libs.plugins.function.counter.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.counter.html
+END
+libs.plugins.modifiercompiler.from_charset.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.from_charset.html
+END
+libs.sysplugins.smarty_internal_compile_private_object_function.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_object_function.html
+END
+libs.sysplugins.smarty_internal_compile_append.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_append.html
+END
+libs.plugins.shared.literal_compiler_param.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.literal_compiler_param.html
+END
+libs.plugins.shared.mb_str_replace.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.mb_str_replace.html
+END
+libs.sysplugins.smarty_internal_compile_block.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_block.html
+END
+libs.sysplugins.smarty_internal_resource_stream.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_stream.html
+END
+libs.sysplugins.smarty_internal_compile_include_php.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_include_php.html
+END
+libs.plugins.outputfilter.trimwhitespace.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.outputfilter.trimwhitespace.html
+END
+libs.sysplugins.smarty_internal_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_config.html
+END
+libs.plugins.modifier.regex_replace.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.regex_replace.html
+END
+libs.plugins.function.html_options.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_options.html
+END
+libs.plugins.shared.make_timestamp.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.make_timestamp.html
+END
+libs.sysplugins.smarty_internal_compile_private_print_expression.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_print_expression.html
+END
+demo.plugins.cacheresource.apc.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.cacheresource.apc.html
+END
+libs.plugins.function.mailto.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.mailto.html
+END
+demo.plugins.resource.mysqls.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.resource.mysqls.html
+END
+libs.sysplugins.smarty_internal_compile_call.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_call.html
+END
+libs.sysplugins.smarty_internal_resource_file.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_resource_file.html
+END
+libs.plugins.modifiercompiler.lower.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.lower.html
+END
+libs.sysplugins.smarty_internal_compile_private_special_variable.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_special_variable.html
+END
+libs.plugins.modifiercompiler.to_charset.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.to_charset.html
+END
+libs.plugins.modifiercompiler.upper.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.upper.html
+END
+libs.sysplugins.smarty_internal_get_include_path.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_get_include_path.html
+END
+libs.plugins.modifiercompiler.cat.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.cat.html
+END
+libs.sysplugins.smarty_internal_templatebase.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_templatebase.html
+END
+libs.sysplugins.smarty_internal_compile_nocache.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_nocache.html
+END
+libs.sysplugins.smarty_internal_compile_config_load.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_config_load.html
+END
+libs.plugins.modifiercompiler.strip_tags.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.strip_tags.html
+END
+libs.sysplugins.smarty_internal_compile_ldelim.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_ldelim.html
+END
+libs.sysplugins.smarty_internal_configfileparser.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_configfileparser.html
+END
+libs.sysplugins.smarty_internal_compilebase.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compilebase.html
+END
+libs.plugins.function.fetch.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.fetch.html
+END
+demo.index.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.index.html
+END
+libs.plugins.modifier.truncate.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.truncate.html
+END
+libs.sysplugins.smarty_config_source.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_config_source.html
+END
+libs.sysplugins.smarty_internal_compile_continue.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_continue.html
+END
+libs.sysplugins.smarty_internal_compile_eval.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_eval.html
+END
+libs.plugins.modifiercompiler.indent.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.indent.html
+END
+libs.sysplugins.smarty_cacheresource.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_cacheresource.html
+END
+demo.plugins.cacheresource.mysql.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/demo.plugins.cacheresource.mysql.html
+END
+libs.sysplugins.smarty_internal_nocache_insert.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_nocache_insert.html
+END
+libs.plugins.variablefilter.htmlspecialchars.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.variablefilter.htmlspecialchars.html
+END
+libs.sysplugins.smarty_internal_templateparser.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_templateparser.html
+END
+libs.plugins.function.html_checkboxes.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_checkboxes.html
+END
+libs.plugins.shared.mb_wordwrap.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.mb_wordwrap.html
+END
+libs.plugins.function.html_radios.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.function.html_radios.html
+END
+libs.plugins.modifiercompiler.strip.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.strip.html
+END
+libs.plugins.modifiercompiler.unescape.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.unescape.html
+END
+libs.sysplugins.smarty_internal_configfilelexer.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_configfilelexer.html
+END
+libs.sysplugins.smarty_internal_compile_private_registered_block.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_private_registered_block.html
+END
+libs.sysplugins.smarty_internal_function_call_handler.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_function_call_handler.html
+END
+libs.SmartyBC.class.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.SmartyBC.class.html
+END
+libs.plugins.modifier.replace.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifier.replace.html
+END
+libs.sysplugins.smarty_internal_compile_foreach.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_foreach.html
+END
+libs.plugins.shared.mb_unicode.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.shared.mb_unicode.html
+END
+libs.sysplugins.smarty_internal_compile_while.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_compile_while.html
+END
+libs.sysplugins.smarty_internal_filter_handler.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.sysplugins.smarty_internal_filter_handler.html
+END
+libs.plugins.modifiercompiler.count_characters.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.count_characters.html
+END
+libs.plugins.modifiercompiler.noprint.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs.plugins.modifiercompiler.noprint.html
+END

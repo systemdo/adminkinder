@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/4741/trunk/documentation/ja/appendixes
+END
+troubleshooting.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4741/trunk/documentation/ja/appendixes/troubleshooting.xml
+END
+resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4707/trunk/documentation/ja/appendixes/resources.xml
+END
+tips.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4707/trunk/documentation/ja/appendixes/tips.xml
+END
+bugs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3856/trunk/documentation/ja/appendixes/bugs.xml
+END

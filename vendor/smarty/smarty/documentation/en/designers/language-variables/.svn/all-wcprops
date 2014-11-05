@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4562/trunk/documentation/en/designers/language-variables
+END
+language-config-variables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/3827/trunk/documentation/en/designers/language-variables/language-config-variables.xml
+END
+language-variable-scopes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3827/trunk/documentation/en/designers/language-variables/language-variable-scopes.xml
+END
+language-assigned-variables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/3827/trunk/documentation/en/designers/language-variables/language-assigned-variables.xml
+END
+language-variables-smarty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4562/trunk/documentation/en/designers/language-variables/language-variables-smarty.xml
+END

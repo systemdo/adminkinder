@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/4843/trunk/distribution/demo/templates
+END
+footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3765/trunk/distribution/demo/templates/footer.tpl
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4843/trunk/distribution/demo/templates/index.tpl
+END
+header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4843/trunk/distribution/demo/templates/header.tpl
+END

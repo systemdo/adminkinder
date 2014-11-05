@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/4051/trunk/development/PHPunit/configs
+END
+test.conf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4051/trunk/development/PHPunit/configs/test.conf
+END
+test2.conf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3765/trunk/development/PHPunit/configs/test2.conf
+END
+test_error.conf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3765/trunk/development/PHPunit/configs/test_error.conf
+END

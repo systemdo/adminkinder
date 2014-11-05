@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers
+END
+plugins.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/plugins.xml
+END
+advanced-features.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/advanced-features.xml
+END
+smarty-constants.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/smarty-constants.xml
+END
+caching.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/caching.xml
+END
+api-variables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/api-variables.xml
+END
+api-functions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3765/trunk/documentation/ru/programmers/api-functions.xml
+END

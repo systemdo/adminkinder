@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4822/trunk/documentation/ja/programmers
+END
+charset.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4822/trunk/documentation/ja/programmers/charset.xml
+END
+smarty-constants.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3856/trunk/documentation/ja/programmers/smarty-constants.xml
+END
+resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4723/trunk/documentation/ja/programmers/resources.xml
+END
+caching.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4715/trunk/documentation/ja/programmers/caching.xml
+END
+api-variables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4715/trunk/documentation/ja/programmers/api-variables.xml
+END
+api-functions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4709/trunk/documentation/ja/programmers/api-functions.xml
+END
+plugins.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3856/trunk/documentation/ja/programmers/plugins.xml
+END
+advanced-features.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/4715/trunk/documentation/ja/programmers/advanced-features.xml
+END
+bc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4723/trunk/documentation/ja/programmers/bc.xml
+END

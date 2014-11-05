@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins
+END
+function.html_select_date.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_select_date.php.txt
+END
+shared.escape_special_chars.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.escape_special_chars.php.txt
+END
+block.textformat.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/block.textformat.php.txt
+END
+shared.mb_str_replace.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.mb_str_replace.php.txt
+END
+modifiercompiler.count_sentences.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.count_sentences.php.txt
+END
+modifiercompiler.escape.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.escape.php.txt
+END
+modifiercompiler.count_paragraphs.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.count_paragraphs.php.txt
+END
+function.html_radios.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_radios.php.txt
+END
+modifiercompiler.strip.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.strip.php.txt
+END
+function.html_image.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_image.php.txt
+END
+modifiercompiler.unescape.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.unescape.php.txt
+END
+modifier.escape.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.escape.php.txt
+END
+modifiercompiler.count_words.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.count_words.php.txt
+END
+modifiercompiler.cat.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.cat.php.txt
+END
+modifier.regex_replace.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.regex_replace.php.txt
+END
+function.counter.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.counter.php.txt
+END
+modifiercompiler.string_format.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.string_format.php.txt
+END
+modifiercompiler.strip_tags.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.strip_tags.php.txt
+END
+shared.mb_unicode.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.mb_unicode.php.txt
+END
+shared.literal_compiler_param.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.literal_compiler_param.php.txt
+END
+modifiercompiler.default.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.default.php.txt
+END
+function.fetch.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.fetch.php.txt
+END
+modifiercompiler.count_characters.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.count_characters.php.txt
+END
+variablefilter.htmlspecialchars.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/variablefilter.htmlspecialchars.php.txt
+END
+modifiercompiler.lower.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.lower.php.txt
+END
+modifiercompiler.noprint.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.noprint.php.txt
+END
+modifier.capitalize.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.capitalize.php.txt
+END
+function.html_checkboxes.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_checkboxes.php.txt
+END
+shared.mb_wordwrap.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.mb_wordwrap.php.txt
+END
+modifier.spacify.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.spacify.php.txt
+END
+modifiercompiler.wordwrap.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.wordwrap.php.txt
+END
+outputfilter.trimwhitespace.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/outputfilter.trimwhitespace.php.txt
+END
+function.html_table.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_table.php.txt
+END
+function.html_options.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_options.php.txt
+END
+modifiercompiler.from_charset.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.from_charset.php.txt
+END
+shared.make_timestamp.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/shared.make_timestamp.php.txt
+END
+function.html_select_time.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.html_select_time.php.txt
+END
+modifier.debug_print_var.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.debug_print_var.php.txt
+END
+modifier.replace.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.replace.php.txt
+END
+modifiercompiler.indent.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.indent.php.txt
+END
+function.mailto.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.mailto.php.txt
+END
+function.math.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.math.php.txt
+END
+modifier.date_format.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.date_format.php.txt
+END
+modifier.truncate.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifier.truncate.php.txt
+END
+modifiercompiler.upper.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.upper.php.txt
+END
+function.cycle.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/function.cycle.php.txt
+END
+modifiercompiler.to_charset.php.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/4850/trunk/development/Smarty3Doc/files/libs/plugins/modifiercompiler.to_charset.php.txt
+END

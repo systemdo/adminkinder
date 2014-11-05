@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource
+END
+030_include_2.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/030_include_2.tpl
+END
+003_parent.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/003_parent.tpl
+END
+030_parent.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/030_parent.tpl
+END
+004_parent.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/004_parent.tpl
+END
+004_child_append.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/004_child_append.tpl
+END
+030_grandchild.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/030_grandchild.tpl
+END
+003_child_prepend.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/003_child_prepend.tpl
+END
+030_child.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/030_child.tpl
+END
+030_include.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4822/trunk/development/PHPunit/templates/extendsresource/030_include.tpl
+END
