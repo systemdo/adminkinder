@@ -24,9 +24,9 @@ return array(
 	'Organization' => 'Einrichtung',
 	'Begin Date;' => 'Anfangsdatum', 
 	'End Date;' => 'Enddatum',	
-	'Search ' => 'Suchen', // no funciona ok?
+	'Search ' => 'Suchen',
 	'Registers Extras' => 'Bargeld', 
-	'Create Registers Extra' => 'Neu Bargeld', //no funciona ok?
+	'Create Registers Extra' => 'Neu Bargeld', 
 	'Date Buy' => 'Kontoauszugsdatum',
 'Code' => 'Code',
 'Home' => 'Übersicht',
