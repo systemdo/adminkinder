@@ -36,6 +36,11 @@ class UsersController extends Controller
                         'roles' => Users::verifyRole(),
                         //'ip' =>'233';
                     ],
+                    [
+                        //'actions' => ['index', 'update'], //alows only this accions
+                        'allow' => true,
+                        'roles' => Users::hasOrganization(),
+                    ],
                 ],
             ],
             'verbs' => [

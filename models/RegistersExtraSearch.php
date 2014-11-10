@@ -51,18 +51,24 @@ class RegistersExtraSearch extends RegistersExtra
         $dateadmin = Registers::currentAdministrativeMonth();
         $begin = $dateadmin['begin']; 
         $end = $dateadmin['end']; 
+        //var_dump($begin);die();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
-        
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query = RegistersExtra::find()->andwhere('registers_extra.organization='.Yii::$app->user->identity->id);
-        }
+        $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->andwhere(['organization' => $who]); 
 
         if (!($this->load($params) && $this->validate())) {
-             $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
             return $dataProvider;
         }
 
@@ -89,22 +95,27 @@ class RegistersExtraSearch extends RegistersExtra
         $dateadmin = Registers::currentAdministrativeMonth();
         $begin = $dateadmin['begin']; 
         $end = $dateadmin['end']; 
-
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query = RegistersExtra::find()->andwhere('registers.organization='.Yii::$app->user->identity->id);
-        }
+        $query->where('date_buy <"'.$begin.'"');
+        
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->andwhere(['registers_extra.organization' => $who]); 
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
         
 
         
         if (!($this->load($params) && $this->validate())) {
     
-            $query->where('date_buy <"'.$begin.'"');
             return $dataProvider;
         }
 
@@ -129,7 +140,10 @@ class RegistersExtraSearch extends RegistersExtra
     }
     public function searchAdvance($post)
     {
-            $organization = $post['RegistersExtraSearch']['organization'];
+            $session = Yii::$app->session;
+            $who = $session->get('organization');   
+
+            $organization = $who;
             $begin = $post['RegistersExtraSearch']['begin_date'];
             $end = $post['RegistersExtraSearch']['end_date'];
         
@@ -139,7 +153,14 @@ class RegistersExtraSearch extends RegistersExtra
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
+        
         
 
              $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');

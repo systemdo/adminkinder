@@ -42,11 +42,11 @@ class ChildrenSearch extends Children
     public function search($params)
     {
         $query = Children::find();
-       
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query->where(['organization' => Yii::$app->user->identity->id]);
-        }
+        $session = Yii::$app->session;
+        $who = $session->get('organization'); 
+        
+                $query->where(['organization' => $who]);
+        
         
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -70,7 +70,7 @@ class ChildrenSearch extends Children
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'surname', $this->surname])
-            ->andFilterWhere(['like', 'organization', $this->organization]);
+            ->andFilterWhere(['like', 'organization', $who]);
 
         return $dataProvider;
     }

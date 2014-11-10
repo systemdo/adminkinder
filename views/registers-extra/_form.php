@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
 use kartik\money\MaskMoney;
+use app\models\Users;
 /* @var $this yii\web\View */
 /* @var $model app\models\RegistersExtra */
 /* @var $form yii\widgets\ActiveForm */

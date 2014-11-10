@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\Registers;
 use app\models\RegistersSearch;
+use app\models\RegistersCodeEspecialSearchc;
 use app\models\RegistersExtra;
 use app\models\RegistersExtraSearch;
 use app\api\DateFormat;
@@ -12,6 +13,7 @@ use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\Users;
 
 /**
  * RegistersExtraController implements the CRUD actions for RegistersExtra model.
@@ -23,17 +25,18 @@ class RegistersExtraController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'rules' => [
+                'rules' => [    
                     [
                         //'actions' => ['index', 'update'], //alows only this accions
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                    /*[
+                    
+                    [
                         //'actions' => ['index', 'update'], //alows only this accions
                         'allow' => true,
                         'roles' => Users::verifyRole(),
-                    ],*/
+                    ],
                 ],
             ],
             'verbs' => [
@@ -70,15 +73,20 @@ class RegistersExtraController extends Controller
         //$searchModel = new RegistersSearch();
         //$dataProvider = $searchModel->searchByExtra($id);
         $re = new RegistersExtra();
+        //$recs = new RegistersCodeEspecialSearchc();
         //echo"<pre>";    
         //var_dump($re->getAllRegistersbyIdExtras($id));
         $registers = $re->getAllRegistersbyIdExtras($id);
+        $regirtercs = $re->getAllRegistersbyCodeEspecialIdExtras($id);
         
         $obRegisters = new Registers();
         return $this->render('view', [
             'model' => $this->findModel($id),
             'registers' => $registers,
-            're' => $obRegisters
+            're' => $obRegisters,
+            'registercs' => $regirtercs,
+            //'recs' => $recs,
+
         ]);
     }
 
@@ -94,7 +102,12 @@ class RegistersExtraController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             
             $model->date_buy = DateFormat::formatDateEu($model->date_buy);
-            $model->organization = Yii::$app->user->identity->id;
+            $session = Yii::$app->session;
+            $who = $session->get('organization');    
+            if(!empty($who))
+            {
+                $model->organization = $session->get('organization');
+            }
         
                if($model->save())
                {

@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\RegistersCodeEspecial;
 use app\models\RegistersCodeEspecialSearchc;
+use app\models\RegistersExtra;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -14,6 +15,7 @@ use yii\db\Expression;
 use yii\db\Query;
 use yii\db\Command;
 use app\models\Code;
+use app\models\Users;
 
 
 use app\api\DateFormat;
@@ -34,11 +36,12 @@ class RegistersCodeEspecialController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                    /*[
+                    [
                         //'actions' => ['index', 'update'], //alows only this accions
                         'allow' => true,
-                        'roles' => Users::verifyRole(),
-                    ],*/
+                        'roles' => Users::hasOrganization(),
+                    ],
+    
                 ],
             ],
             'verbs' => [
@@ -94,7 +97,13 @@ class RegistersCodeEspecialController extends Controller
          
         if($model->load(Yii::$app->request->post())) {
             
-            $model->organization =  Yii::$app->user->identity->id;
+            $session = Yii::$app->session;
+            $who = $session->get('organization');    
+            if(!empty($who))
+            {
+                $model->organization = $session->get('organization');
+            }
+            
             $model->date_buy = DateFormat::formatDateEu($model->date_buy);
                 
             if($extra != false)
@@ -113,6 +122,9 @@ class RegistersCodeEspecialController extends Controller
                // var_dump($model->save());
             if($model->save())
             {     
+                if($extra){
+                    return $this->redirect('/registers-extra/view?id='.$extra);
+                }
                 return $this->redirect(['view', 'id' => $model->id]);
             }    
         }
@@ -130,7 +142,7 @@ class RegistersCodeEspecialController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate($id, $extra = false)
     {
         $model = $this->findModel($id);
 
@@ -157,10 +169,13 @@ class RegistersCodeEspecialController extends Controller
      * @param integer $id
      * @return mixed
      */
-    public function actionDelete($id)
+    public function actionDelete($id, $extra = false)
     {
         $this->findModel($id)->delete();
-
+        if($extra)
+        {
+            return $this->redirect('/registers-extra/view?id='.$extra);
+        }
         return $this->redirect(['index']);
     }
 
@@ -171,7 +186,7 @@ class RegistersCodeEspecialController extends Controller
      * @return RegistersCodeEspecial the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel($id, $extra = false)
     {
         if (($model = RegistersCodeEspecial::findOne($id)) !== null) {
             return $model;

@@ -37,11 +37,11 @@ class RegistersController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                    /*[
+                    [
                         //'actions' => ['index', 'update'], //alows only this accions
                         'allow' => true,
-                        'roles' => Users::verifyRole(),
-                    ],*/
+                        'roles' => Users::hasOrganization(),
+                    ],
                 ],
             ],
             'verbs' => [
@@ -100,7 +100,13 @@ class RegistersController extends Controller
         
         if($model->load(Yii::$app->request->post())) {
             
-             $model->organization =  Yii::$app->user->identity->id;
+            $session = Yii::$app->session;
+            $who = $session->get('organization');    
+            if(!empty($who))
+            {
+                $model->organization = $session->get('organization');
+            }
+            
             $model->date_buy = DateFormat::formatDateEu($model->date_buy);
             if($extra != false)
             {
@@ -117,6 +123,9 @@ class RegistersController extends Controller
                 
             if($model->save())
             {     
+                if($extra){
+                    return $this->redirect('/registers-extra/view?id='.$extra);
+                }
                 return $this->redirect(['view', 'id' => $model->id]);
             }    
 
@@ -218,8 +227,8 @@ class RegistersController extends Controller
         
         $total_rce =  (float) RegistersCodeEspecial::getTotal();
         $total = (float) Registers::getTotal();
-    
-       
+        
+       //var_dump($total);die();
         //$lastregisters = Registers::getRegistersByMonth('l');
         $lastregisters = Registers::getRegistersByMonthWithAllCode($codes, 'last');
         
@@ -241,7 +250,7 @@ class RegistersController extends Controller
                 'lastregisters' => $lastregisters,
                 'children' => $childrens,
                 'childrenlastmonth' => $childrenlastmonth,
-                'total' => number_format($total,2,',','.'),
+                'total' => $total,
                 'lasttotal' => number_format($lasttotal,2,',','.'),
                 "rcelast" => $rcelast,
                 "rce" => $rce,

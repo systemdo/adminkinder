@@ -42,7 +42,10 @@ class CodeSearch extends Code
     public function search($params)
     {
         $query = Code::find();
-
+        //$session = Yii::$app->session;
+        //$who = $session->get('organization');    
+        //$query->where(['organization' => $who]); 
+        
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);

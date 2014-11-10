@@ -51,6 +51,11 @@ use yii\jui\DatePicker;
         <?= Html::submitButton(Yii::t('app', 'Txt'), ['class' =>'btn btn-primary', 'name' => "txt" ]) ?>
         
 </div>
+<?php if(!$noresult){ ?>
+<div class="form-group">
+        <pre><?php echo Yii::t('app', 'Not Found')?></pre>
+</div>
+<?php }?>
 <div class="help-block"></div>
     
     <?php ActiveForm::end(); ?>

@@ -40,8 +40,10 @@ class FilesSystem extends Model
      function getExcel($b="" , $e="")
      {
         $object= $this->getConsult($b,$e);
-        $this->buildExcel($object,$b,$e);
-
+        if($object)
+            $this->buildExcel($object,$b,$e);
+        else
+            return false;
      }
     
      /*
@@ -66,10 +68,13 @@ class FilesSystem extends Model
 
      function getTxt($b="" , $e="")
      {
-        $object= $this->getConsult($b,$e);
+        $object= $this->getConsult($b,$e); 
+        //var_dump($object); die();
         //$this->buildTxt($object,$b,$e);
-        $this->buildNewTxt($object,$b,$e);
-
+         if($object)
+            $this->buildNewTxt($object,$b,$e);
+         else
+            return false;           
      }  
      
      private function buildTxt($object, $b = '', $e="")
@@ -148,18 +153,20 @@ class FilesSystem extends Model
          //var_dump($object);die();
          foreach ($object as $key => $ob){  
             //var_dump($object);die();
-                    
-                    $objPHPExcel->getActiveSheet()->setCellValue('A'.$row,$this->buildBelegnumber($ob['date_buy'])); 
+                    $objPHPExcel->getActiveSheet()->getStyle('A'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                    $objPHPExcel->getActiveSheet()->setCellValue('A'.$row,$this->buildBelegnumber($ob['date_buy']));
+                     //$objPHPExcel->getActiveSheet()->getStyle('A'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_LEFT);//ALINEAR A LA DERECHA 
                     
                     //$date = explode(' ', $ob['create_date']);
-                    
+                    $objPHPExcel->getActiveSheet()->getStyle('B'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT); 
                     $objPHPExcel->getActiveSheet()->setCellValue('B'.$row,$b); 
+                    $objPHPExcel->getActiveSheet()->getStyle('C'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);//ALINEAR A LA DERECHA 
                     $objPHPExcel->getActiveSheet()->setCellValue('C'.$row,Users::accountUser()); 
-                    
+                    $objPHPExcel->getActiveSheet()->getStyle('D'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);//ALINEAR A LA DERECHA 
                     if(isset($ob['account_pay']))
                         $objPHPExcel->getActiveSheet()->setCellValue('D'.$row,'k'.$ob['account_pay']); 
                     else
-                        $objPHPExcel->getActiveSheet()->setCellValue('D'.$row,'k0000000000'); 
+                        $objPHPExcel->getActiveSheet()->setCellValue('D'.$row,'k'.$ob['process']); 
                         
 
                     
@@ -167,9 +174,10 @@ class FilesSystem extends Model
                     $objPHPExcel->getActiveSheet()->setCellValue('F'.$row,$ob['cliente']); 
                     $objPHPExcel->getActiveSheet()->setCellValue('G'.$row,$this->buildBelegnumber($ob['date_buy'])); 
                     $objPHPExcel->getActiveSheet()->setCellValue('H'.$row,$e); 
+                    $objPHPExcel->getActiveSheet()->getStyle('H'.$row)->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                     $row++ ;
             }
-            
+           // $objPHPExcel->getActiveSheet()->getStyle()->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);//ALINEAR A LA DERECHA
             header('Content-Type: application/vnd.ms-excel');
             $filename = "MyExcelReport_".date("d-m-Y-His").".xls";
             header('Content-Disposition: attachment;filename='.$filename .' ');
@@ -197,6 +205,7 @@ class FilesSystem extends Model
         ->innerJoin('children as c','r.child=c.id')
         ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
         ->groupBy('r.child');
+        //echo "<pre>";
         //var_dump($query);
         //$registers = $query->all();
         $command = $query->createCommand();
@@ -211,6 +220,7 @@ class FilesSystem extends Model
         ->from('registers_code_especial as r')
         ->innerJoin('code as c','r.code=c.id')
         ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
+        ->andwhere('r.organization ='.Users::getOrg())
         ->groupBy('r.code');
         
         $command = $query->createCommand();
@@ -219,9 +229,12 @@ class FilesSystem extends Model
             $code['cliente'] =  $code['name'];
             $allregisters [] = $code;
         }
-        
+        if(empty($allregisters))
+        {
+            return $allregisters;  
+        }
        //echo "<pre>";
-       //var_dump($codes);die();
+       //var_dump($allregisters);die();
         return $allregisters;
         
      }
@@ -266,7 +279,7 @@ class FilesSystem extends Model
             fwrite($txt,$F.$this->calcSpaceCellName($F));
             fwrite($txt,$G.$this->calcSpace($G));
             fwrite($txt,$H.$this->calcSpace($H));
-            fwrite($txt,PHP_EOL);
+            fwrite($txt,"\n\r");
         //die();
         $b = DateFormat::formatDateDe($b); 
         $e = DateFormat::formatDateDe($e); 
@@ -281,13 +294,13 @@ class FilesSystem extends Model
             if(isset($ob['account_pay']))
             fwrite($txt,'k'.$ob['account_pay'].$this->calcSpace('k'.$ob['account_pay']));
             else
-                fwrite($txt,'k00000000'.$this->calcSpace('k00000000'));
+                fwrite($txt,'k'.$ob['process'].$this->calcSpace('k'.$ob['process']));
 
             fwrite($txt,number_format($ob['total'],2,',','.').$this->calcSpace($ob['total']));
             fwrite($txt,$ob['cliente'].$this->calcSpaceCellName($ob['cliente']));
             fwrite($txt,$this->buildBelegnumber($ob['date_buy']).$this->calcSpace($this->buildBelegnumber($ob['date_buy'])));
             fwrite($txt,$e.$this->calcSpace($e));
-            fwrite($txt,"\n");
+            fwrite($txt,"\n\r");
         }
         //die();
         fclose($txt);  

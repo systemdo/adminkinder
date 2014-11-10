@@ -19,8 +19,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => 45]) ?>
     <?= $form->field($model, 'abbreviation')->textInput(['maxlength' => 45]) ?>
+    <?php if($model->isNewRecord){?>
     <?= $form->field($model, 'especial')->dropDownList(array('Nein', 'Ja'), ['placeholder'=> 'Choose Code'])?>
-
+    <?php } ?>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

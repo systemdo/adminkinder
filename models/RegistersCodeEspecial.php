@@ -6,6 +6,7 @@ use Yii;
 
 use app\api\DateFormat;
 use yii\db\Query;
+use app\models\Users;
 
 /**
  * This is the model class for table "registers_code_especial".
@@ -126,6 +127,7 @@ class RegistersCodeEspecial extends \yii\db\ActiveRecord
         ->from('registers_code_especial as r')
         ->innerJoin('code as c','c.id=r.code')
         ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
+         ->andwhere('r.organization ='.Users::getOrg())
         ->groupBy('c.abbreviation');
         $command = $query->createCommand();
         return $registers = $command->queryAll();
@@ -142,7 +144,8 @@ class RegistersCodeEspecial extends \yii\db\ActiveRecord
         $query = new Query();
         $query->select('*, sum(amount) as total')
         ->from('registers_code_especial as r')
-        ->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
+        ->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"')
+ ->andwhere('r.organization ='.Users::getOrg());
         //->groupBy('c.name');
         //var_dump($query);die();
         $command = $query->createCommand();

@@ -41,7 +41,10 @@ class RegistersSearch extends Registers
 
     public function searchAdvance($post)
     {
-            $organization = $post['RegistersSearch']['organization'];
+            //$organization = $post['RegistersSearch']['organization'];
+            $session = Yii::$app->session;
+            $organization = $session->get('organization');    
+             
             $begin = $post['RegistersSearch']['begin_date'];
             $end = $post['RegistersSearch']['end_date'];
         
@@ -51,6 +54,13 @@ class RegistersSearch extends Registers
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        'abbreviation' => SORT_ASC 
+                        ]
+                        ]
+            
         ]);
         
 
@@ -96,14 +106,20 @@ class RegistersSearch extends Registers
         
         $query = Registers::find();
         
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query = Registers::find()->andwhere('registers.organization='.Yii::$app->user->identity->id);
-        }
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->where(['registers.organization' => $who]); 
+
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        'abbreviation' => SORT_ASC 
+                        ]
+                    ]
         ]);
         
 
@@ -127,7 +143,7 @@ class RegistersSearch extends Registers
         if (!($this->load($params) && $this->validate())) {
     
             $query->joinWith(['code', 'child']);
-            $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
+            $query->andwhere('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
             return $dataProvider;
         }
 
@@ -136,6 +152,7 @@ class RegistersSearch extends Registers
             'voucher' => $this->voucher,
             //'date_buy' => $this->date_buy,
             //'extract' => $this->extract,
+            'organization' => $this->organization,
             
             'amount' => $this->amount,
             
@@ -146,13 +163,13 @@ class RegistersSearch extends Registers
         $query->andWhere('extract Like "'.$this->extract.'%"');
         $query->andWhere('date_buy Like "%'.$this->date_buy.'%"');
         $query->joinWith(['code' => function ($q) {
-            $q->where('code.abbreviation LIKE "%' . $this->abbreviation . '%"');
+            $q->andwhere('code.abbreviation LIKE "%' . $this->abbreviation . '%"');
         }]);
         $query->joinWith(['child' => function ($q) {
-            $q->where('children.name LIKE "%' . $this->childName . '%"');
+            $q->andwhere('children.name LIKE "%' . $this->childName . '%"');
         }]);
         $query->joinWith(['child' => function ($q) {
-            $q->where('children.surname LIKE "%' . $this->childSurname . '%"');
+            $q->andwhere('children.surname LIKE "%' . $this->childSurname . '%"');
         }]);
         //$query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
         //echo '<pre>';
@@ -171,14 +188,19 @@ class RegistersSearch extends Registers
         $begin = $dateadmin['begin']; 
         $end = $dateadmin['end']; 
 
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query = Registers::find()->andwhere('registers.organization='.Yii::$app->user->identity->id);
-        }
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->where(['registers.organization' => $who]); 
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
         
 
@@ -202,7 +224,7 @@ class RegistersSearch extends Registers
         if (!($this->load($params) && $this->validate())) {
     
             $query->joinWith(['code', 'child']);
-            $query->where('date_buy <"'.$begin.'"');
+            $query->andwhere('date_buy <"'.$begin.'"');
             return $dataProvider;
         }
 
@@ -221,13 +243,13 @@ class RegistersSearch extends Registers
         $query->andWhere('extract Like "'.$this->extract.'%"');
         $query->andWhere('date_buy Like "%'.$this->date_buy.'%"');
         $query->joinWith(['code' => function ($q) {
-            $q->where('code.abbreviation LIKE "%' . $this->abbreviation . '%"');
+            $q->andwhere('code.abbreviation LIKE "%' . $this->abbreviation . '%"');
         }]);
         $query->joinWith(['child' => function ($q) {
-            $q->where('children.name LIKE "%' . $this->childName . '%"');
+            $q->andwhere('children.name LIKE "%' . $this->childName . '%"');
         }]);
         $query->joinWith(['child' => function ($q) {
-            $q->where('children.surname LIKE "%' . $this->childSurname . '%"');
+            $q->andwhere('children.surname LIKE "%' . $this->childSurname . '%"');
         }]);
         //echo "<pre>";
         //var_dump($dataProvider); die();

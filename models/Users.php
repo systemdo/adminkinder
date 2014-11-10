@@ -224,5 +224,33 @@ class Users extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
                  throw new NotFoundHttpException('The requested page does not exist.');die();
             }    
     }
+
+    static function hasOrganization()
+    {
+        
+        $session = Yii::$app->session;
+        $who = $session->get('organization');
+           //var_dump($who); die();     
+            if(!empty($who)){
+                return ['@'];   
+            }else
+            {   
+                //var_dump(Yii::$app->request->getBaseUrl());
+                //die('helo');
+                if(Users::isSuperAdmin())
+                    Yii::$app->response->redirect(Yii::$app->request->baseUrl.'login/choose-organization'); 
+                else
+                    Yii::$app->response->redirect('login');
+            }
+                
+    }
+    static function getOrg()
+    {
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        return $who;     
+    }
+
+
     
 }

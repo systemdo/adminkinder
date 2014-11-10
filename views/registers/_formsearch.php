@@ -14,7 +14,7 @@ use yii\jui\DatePicker;
 
     <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($model, 'organization')->dropDownList(ArrayHelper::map(Users::find()->all(), 'id', "username"), ['placeholder'=> 'Choose Organization'])?>
+<?php //$form->field($model, 'organization')->dropDownList(ArrayHelper::map(Users::find()->all(), 'id', "username"), ['placeholder'=> 'Choose Organization'])?>
 
 <div class="form-group field-registers-begin_date required">
 <label class="control-label"><?php echo $model->getAttributeLabel('begin_date')?></label>;

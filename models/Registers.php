@@ -143,9 +143,10 @@ class Registers extends \yii\db\ActiveRecord
         $day = date('d');
         $da = 15;
         $month = date('m');
+        $month = $month - 1;
         if($current == 'last')
         {
-            $month = $month - 1;
+            $month = $month - 2;
         }
         $year = date('Y');
         //current adminstaive month
@@ -155,6 +156,7 @@ class Registers extends \yii\db\ActiveRecord
         {
             //End year 
             $year = $year + 1;
+            // month is 00 because down I sume with 1
             $month = '00';
         }
         /*elseif ($current == "last" && $month  == "01") {
@@ -176,15 +178,16 @@ class Registers extends \yii\db\ActiveRecord
         $betweendate = Registers::currentAdministrativeMonth($month);
         $begin = $betweendate['begin'];
         $end = $betweendate['end'];
-        
-        $query->select('r.code, r.child, r.amount,h.name, h.surname, c.abbreviation as codename, sum(amount)as total')
+        //var_dump(Users::getOrg());die();
+        $query->select('r.code, r.child, r.amount,h.name, h.organization, h.surname, c.abbreviation as codename, sum(amount)as total')
         ->from(' registers as r')
         ->innerJoin('children as h','r.child = h.id')
         ->innerJoin('code as c','r.code=c.id')
-        ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
+        ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'" And h.organization ='.Users::getOrg())
+        //->andwhere()
         ->groupBy('h.surname ,c.abbreviation');
         
-        
+        //var_dump($query); die();
         $command = $query->createCommand();
         $registers = $command->queryAll();
         
@@ -277,7 +280,10 @@ class Registers extends \yii\db\ActiveRecord
         $query = new Query();
         $query->select('*, sum(amount) as total')
         ->from('registers as r')
-        ->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
+        ->innerJoin('code as c','c.id=r.code')
+        ->where('c.especial != 1')
+        ->andwhere('date_buy >="'.$begin.'"AND date_buy <="'. $end.'" AND r.organization ='.Users::getOrg());
+        //->andwhere('r.organization ='.Users::getOrg());
         //->groupBy('c.name');
         //var_dump($query);die();
         $command = $query->createCommand();
@@ -287,6 +293,7 @@ class Registers extends \yii\db\ActiveRecord
             return "0,00";
         }
         $total = $total[0]['total'];
+        //var_dump($total); die();
         //$total = number_format($total, '2', ',', '.'); 
         return $total;
     }
@@ -296,16 +303,17 @@ class Registers extends \yii\db\ActiveRecord
         
         //$betweendate = Registers::currentDate($month);
         //var_dump($month);
-        $betweendate =Registers::currentAdministrativeMonth($month);
+        $betweendate = Registers::currentAdministrativeMonth($month);
 
         $begin = $betweendate['begin'];
         $end = $betweendate['end'];
 
         $query = new Query();
-        $query->select('r.amount,c.id,c.name,sum(r.amount) as total')
+        $query->select('r.amount, r.organization,c.id,c.name,sum(r.amount) as total')
         ->from('registers as r')
         ->innerJoin('children as c','r.child = c.id')
-        ->where('c.id='.$idchild.' AND r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"');
+        ->where('c.id='.$idchild.' AND r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
+        ->where('r.organization ='.Users::getOrg());
         //->groupBy('c.name');
         //var_dump($query);die();
         $command = $query->createCommand();
@@ -328,15 +336,18 @@ class Registers extends \yii\db\ActiveRecord
         $end = $betweendate['end'];
 
         $query = new Query();
-        $query->select('c.abbreviation,sum(r.amount) as amount')
+        $query->select('*, c.abbreviation,sum(r.amount) as amount')
         ->from('registers as r')
         ->innerJoin('code as c','c.id=r.code')
         ->where('r.date_buy >="'.$begin.'"AND r.date_buy <="'. $end.'"')
+        ->andwhere('r.organization ='.Users::getOrg())
+        ->andwhere('c.especial != 1')
         ->groupBy('c.abbreviation');
         $command = $query->createCommand();
         return $registers = $command->queryAll();
     }
 
+    //without especial code
     static function getRegistersByMonthWithAllCode($codes, $current = false)
     {
 

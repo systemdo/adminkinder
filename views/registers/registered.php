@@ -41,15 +41,16 @@ $this->title = Yii::t('app', 'Registers');
     <thead>
         
         <tr>
-        <pre>
+  
         <?php 
-            var_dump($lastregisters);
-            foreach ($codes as $key => $code) { 
-        ?>
-            
+        if(!empty($lastregisters))
+        {
+        foreach ($codes as $key => $code) { 
+        ?> 
                <th><?php echo $code['abbreviation']?></th>
             
         <?php
+        }
         } 
         ?>
         <th><?= Html::encode(Yii::t('app', 'Amount')) ?></th>
@@ -57,15 +58,16 @@ $this->title = Yii::t('app', 'Registers');
         <tr>
        </thead> 
        <tbody>
-       <pre>
+       
         <?php
-            var_dump($lastregisters);
+            //var_dump($lastregisters);
             foreach ($lastregisters as $key => $register) { 
-        ?>
-            //if($re){
-           
+                //var_dump($register);
+                //echo '->'.number_format((float)$register['amount'], 2, ',', '.');
+            ?>
+    
+                    
                <td><?php echo number_format((float)$register['amount'], 2, ',', '.')?></td>
-           
        <?php 
         }
         ?>
@@ -109,7 +111,7 @@ $this->title = Yii::t('app', 'Registers');
             <td><?php echo $child['surname'].', '.$key?></td>
        <?php 
             foreach ($codes as $k => $code) {
-                // var_dump($code['abbreviation']);
+                //var_dump($code['abbreviation']);die();
         ?>       
             <td><?php echo isset($child[$code['abbreviation']])? number_format((float)$child[$code['abbreviation']],2, ',','.'): "0,00"; ?></td>
         <?php   
@@ -258,10 +260,12 @@ $this->title = Yii::t('app', 'Registers');
     </tr>
     <tr>
     <?php
+
+        //var_dump($registers);die();
         foreach ($registers as $key => $register) { 
     ?>
         
-       
+            
           <td><?php echo number_format((float)$register['amount'], 2, ',', '.')?></td>
        
    <?php 

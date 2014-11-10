@@ -52,24 +52,31 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
         $dateadmin = Registers::currentAdministrativeMonth();
         $begin = $dateadmin['begin']; 
         $end = $dateadmin['end']; 
-
-         if(Yii::$app->user->identity->role != 1)
-        {
-            $query = RegistersCodeEspecial::find()->where('registers_code_especial.organization='.Yii::$app->user->identity->id);
-            
-        }
+         //var_dump($begin);die();
+         
         $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
-        $dataProvider = new ActiveDataProvider([
-            'query' => $query,
-            'pagination' => [ 'pageSize' => 10],
-        ]);
-
+       
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->andwhere(['organization' => $who]); 
+        
         $dataProvider->sort->attributes['abbreviation'] = 
         [
             'asc' => ['code.abbreviation' => SORT_ASC],
             'desc' => ['code.abbreviation' => SORT_DESC],
         ];
 
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
+        ]);
+        
 
         if (!($this->load($params) && $this->validate())) {
             return $dataProvider;
@@ -101,14 +108,19 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
         $begin = $dateadmin['begin']; 
         $end = $dateadmin['end']; 
 
-        if(Yii::$app->user->identity->role != 1)
-        {
-            $query = RegistersCodeEspecial::find()->andwhere('registers_code_especial.organization='.Yii::$app->user->identity->id);
-        }
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->where(['registers_code_especial.organization' => $who]); 
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
         
 
@@ -121,7 +133,7 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
         if (!($this->load($params) && $this->validate())) {
     
             $query->joinWith(['code']);
-            $query->where('date_buy <"'.$begin.'"');
+            $query->andwhere('date_buy <"'.$begin.'"');
             return $dataProvider;
         }
 
@@ -150,7 +162,10 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
     }
     public function searchAdvance($post)
     {
-            $organization = $post['RegistersCodeEspecialSearchc']['organization'];
+            //$organization = $post['RegistersCodeEspecialSearchc']['organization'];
+            $session = Yii::$app->session;
+            $who = $session->get('organization');    
+    
             $begin = $post['RegistersCodeEspecialSearchc']['begin_date'];
             $end = $post['RegistersCodeEspecialSearchc']['end_date'];
         
@@ -160,6 +175,12 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
         ]);
         
 
@@ -172,7 +193,49 @@ class RegistersCodeEspecialSearchc extends RegistersCodeEspecial
         
             $query->joinWith(['code']);
             $query->where('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
-            $query->andWhere('registers_code_especial.organization ='.$organization);
+            $query->andWhere('registers_code_especial.organization ='.$who);
+            
+            return $dataProvider;
+    }
+    public function searchExtra($extra)
+    {
+        $dateadmin = Registers::currentAdministrativeMonth();
+        $begin = $dateadmin['begin']; 
+        $end = $dateadmin['end']; 
+
+        $query = RegistersCodeEspecial::find();
+        
+        $session = Yii::$app->session;
+        $who = $session->get('organization');    
+        $query->where(['registers_code_especial.organization' => $who]); 
+
+        
+        //var_dump($query);die();
+        
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [ 'pageSize' => 10],
+            'sort'=>[
+                        'defaultOrder' => [
+                        'date_buy' => SORT_DESC,
+                        //'abbreviation' => SORT_ASC 
+                        ]
+            ]
+        ]);
+        
+        
+
+        $dataProvider->sort->attributes['abbreviation'] = 
+        [
+            'asc' => ['code.abbreviation' => SORT_ASC],
+            'desc' => ['code.abbreviation' => SORT_DESC],
+        ];
+
+                    
+            $query->joinWith(['code']);
+            $query->andwhere("extra =".$extra);
+            $query->andwhere('date_buy >="'.$begin.'"AND date_buy <="'. $end.'"');
+           // $query->andWhere('registers_code_especial.organization ='.$organization);
             
             return $dataProvider;
     }

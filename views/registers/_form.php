@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use yii\jui\DatePicker;
 use kartik\money\MaskMoney;
+use app\models\Users;
 /* @var $this yii\web\View */
 /* @var $model app\models\Registers */
 /* @var $form yii\widgets\ActiveForm */
@@ -36,7 +37,7 @@ use kartik\money\MaskMoney;
 ?>
 </div>
 <div class="help-block"></div>
-    <?= $form->field($model, 'code')->dropDownList(ArrayHelper::map($code::find()->all(), 'id', "abbreviation"), ['placeholder'=> 'Choose Code'])?>
+    <?= $form->field($model, 'code')->dropDownList(ArrayHelper::map($code::find()->where('code.especial != 1')->all(), 'id', "abbreviation"), ['placeholder'=> 'Choose Code'])?>
 
     <?= $form->field($model, 'process')->textarea() ?>
 
@@ -51,7 +52,7 @@ use kartik\money\MaskMoney;
     ]
 ]); ?>
 
-    <?= $form->field($model, 'child')->dropDownList(ArrayHelper::map($children::find()->all(), 'id', "name", 'surname'), ['placeholder'=> Yii::t('app', 'Choose child')]) ?>
+    <?= $form->field($model, 'child')->dropDownList(ArrayHelper::map($children::find()->where('children.organization='.Users::getOrg())->all(), 'id', "name", 'surname'), ['placeholder'=> Yii::t('app', 'Choose child')]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -29,11 +29,11 @@ class ChildrenController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
-                    /*[
+                    [
                         //'actions' => ['index', 'update'], //alows only this accions
                         'allow' => true,
-                        'roles' => Users::verifyRole(),
-                    ],*/
+                        'roles' => Users::hasOrganization(),
+                    ],
                 ],
             ],
             'verbs' => [
@@ -84,11 +84,12 @@ class ChildrenController extends Controller
         $model = new Children();
         $model->create_date = new Expression('NOW()'); 
         //var_dump(Yii::$app->user->identity);die();
-            if(isset(Yii::$app->user->identity))
+        $session = Yii::$app->session;
+        $who = $session->get('organization');
+                
+            if(!empty($who))
             {
-                $model->organization = Yii::$app->user->identity->id;    
-                //var_dump(Yii::$app->user->identity->id);die();
-                //die('holça');
+                $model->organization = $session->get('organization');
             }    
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);

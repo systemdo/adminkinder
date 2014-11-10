@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'extract',
+            //'organization',
             ['attribute'=>'date_buy', 'value' => 'formatDateRegister'],
             ['attribute'=>'childName', 'value' => 'childName'],
             ['attribute'=>'childSurname', 'value' => 'childSurname'],

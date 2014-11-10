@@ -27,6 +27,11 @@ class FilesController extends Controller
                         'allow' => true,
                         'roles' =>  Users::verifyRole(),
                     ],
+                    [
+                        //'actions' => ['index', 'update'], //alows only this accions
+                        'allow' => true,
+                        'roles' => Users::hasOrganization(),
+                    ],
                 ],
             ],
             'verbs' => [
@@ -51,7 +56,7 @@ class FilesController extends Controller
     {
         
         $model = new FilesSystem();
-        
+        $noresult = true;
        if (Yii::$app->request->post()) {
             
             //var_dump(Yii::$app->request->post());die();
@@ -62,18 +67,17 @@ class FilesController extends Controller
             
             if(isset($post['excel']))
             {
-                $model->getExcel($begin, $end);    
+                $noresult=$model->getExcel($begin, $end);    
             }else
                 {
-                    $model->getTxt($begin, $end);
+                    $noresult=$model->getTxt($begin, $end);
                 }    
         } 
-        else 
-            {//var_dump($model); die();
                 return $this->render('files', [
                     'model' => $model,
+                    'noresult' =>  $noresult
                 ]);
-            }
+
     }
 
     

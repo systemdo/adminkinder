@@ -1,11 +1,11 @@
 <?php
 
 namespace app\models;
-
 use Yii;
 use yii\db\Query;
 
 use app\api\DateFormat;
+use app\models\Users;
 
 /**
  * This is the model class for table "registers_extra".
@@ -115,7 +115,23 @@ class RegistersExtra extends \yii\db\ActiveRecord
         $query = new Query();
         $query->select('*')
         ->from('registers')
-        ->where('extra='.$id_extra);
+        ->where('extra='.$id_extra)
+         ->andwhere('organization ='.Users::getOrg());
+        //->groupBy('c.name');
+        //var_dump($query);die();
+        $command = $query->createCommand();
+        $registers = $command->queryAll();
+        return $registers;
+
+    }
+
+    function getAllRegistersbyCodeEspecialIdExtras($id_extra)
+    {
+        $query = new Query();
+        $query->select('*')
+        ->from('registers_code_especial')
+        ->where('extra='.$id_extra)
+        ->andwhere('organization ='.Users::getOrg());
         //->groupBy('c.name');
         //var_dump($query);die();
         $command = $query->createCommand();

@@ -12,6 +12,7 @@ use Yii;
  * @property string $abbreviation
  * @property integer $especial
  *
+ * @property Organization[] $Organization
  * @property Registers[] $registers
  */
 class Code extends \yii\db\ActiveRecord
@@ -54,6 +55,11 @@ class Code extends \yii\db\ActiveRecord
     public function getRegisters()
     {
         return $this->hasMany(Registers::className(), ['code' => 'id']);
+    }
+
+    public function getOrganization()
+    {
+        return $this->BELONGS_TO(Users::className(), ['organization' => 'id']);
     }
 
     public function getEspecialCode()

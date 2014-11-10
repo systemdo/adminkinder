@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['attribute'=>'abbreviation', 'value' => 'abbreviation'],
             // 'process:ntext',
             ['attribute'=>'amount', 'value' => 'amountFormat'],
-            // 'organization',
+            //'organization',
             // 'extra',
             // 'create_date',
             // 'update_date',

@@ -32,6 +32,11 @@ class CodeController extends Controller
                         'allow' => true,
                         'roles' => Users::verifyRole(),
                     ],
+                    [
+                        //'actions' => ['index', 'update'], //alows only this accions
+                        'allow' => true,
+                        'roles' => Users::hasOrganization(),
+                    ],
                 ]],
             'verbs' => [
                 'class' => VerbFilter::className(),
@@ -77,7 +82,13 @@ class CodeController extends Controller
     public function actionCreate()
     {
         $model = new Code();
-
+        $session = Yii::$app->session;
+        $who = $session->get('organization');
+                
+            /*if(!empty($who))
+            {
+                $model->organization = $session->get('organization');
+            }*/  
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
